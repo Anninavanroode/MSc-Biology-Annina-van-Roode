@@ -66,7 +66,7 @@ df2$Total.Time.Spend.Front <- as.numeric(df2$Total.Time.Spend.Front)
 summary(df)                                                                     # Almost all variables are 0 while singing so singing will not be included in the analysis
 summary(df2)
 
-# Difference between segment 1 and 2 (before and after rotation) Appendix ? and ? 
+# Difference between segment 1 and 2 (before and after rotation) Appendix II and III 
 
 help(scatterplot)
 scatterplot(df2$Total.Switching.Position ~ df2$Total.Switching.Position | df2$Segment) ->?
@@ -242,7 +242,7 @@ boxplot(df2$Total.Time.Spend.Back ~ df2$Segment,
         xlab = 'Segment', 
         main = 'Total time spend in the back in each segment')
 
-# Dependent variables female presence (time spend) Appendix ?
+# Dependent variables female presence (time spend) Appendix VI
 
 ## Switching position
 
@@ -364,7 +364,7 @@ plot(df$Total.Time.Spend.Back ~ df$Total.Time.Spend.Female,
 
 cor.test(df$Total.Time.Spend.Back, df$Total.Time.Spend.Female)                  # Total time spend female is not significant/correlated
 
-# Dependent variables against treatments visualisation data Appendix ?
+# Dependent variables against treatments visualisation data Appendix IV
 
 boxplot(df$Total.Time.Spend.Female~df$Treatment, ylab = 'Time spend female (s)', 
         xlab = 'Treatment', 
@@ -440,7 +440,7 @@ boxplot(df$Total.Time.Spend.Back~df$Treatment,                                  
         xlab = 'Treatment',
         main = 'Total time spend in the back for each treatment')
 
-# Construct and run model and diagnostics Appendix ? 
+# Construct and run model and diagnostics Appendix V
 
 ## Time spend female
 
